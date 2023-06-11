@@ -4,15 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agência de Viagens</title>
-
-  <style>
-    /* Estilos CSS podem ser adicionados aqui */
-  </style>
+  <link rel="stylesheet" href="padrao.css">
+  <link rel="stylesheet" href="cards.css">
 </head>
-
-
 <body>
-<!-- menu superior - Camila  -->
   <header>
     <nav>
       <ul>
@@ -23,53 +18,57 @@
     </nav>
   </header>
 
-<!-- Objetivo da empresa - Lara -->
   <main>
     <section id="sobre">
       <h2>Sobre a Empresa</h2>
       <p>Texto sobre a empresa...</p>
     </section>
 
-<!-- Detalhes do produto - Antônio -->
     <section id="produtos">
-      <h2>Produtos</h2>
-      <ul>
-        <li>
-          <h3>Passeio 1</h3>
-          <p>Descrição do passeio 1...</p>
-        </li>
-        <li>
-          <h3>Passeio 2</h3>
-          <p>Descrição do passeio 2...</p>
-        </li>
-        <li>
-          <h3>Passeio 3</h3>
-          <p>Descrição do passeio 3...</p>
-        </li>
-      </ul>
-    </section>
-
-<!-- Formulário - Carlos  -->
-    <section id="contato">
-      <h2>Contato</h2>
-      <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
-
-        <input type="submit" value="Enviar">
-      </form>
+      <h2>Roteiros</h2>
+      <div class="card">
+        <img src="https://cdnb.artstation.com/p/assets/images/images/008/236/075/large/ken-coleman-castle-grayskull-2017-b-copy-2.jpg?1511380065" alt="Grayskull">
+        <div class="card-content">
+          <h3 class="card-title">Grayskull</h3>
+          <p class="card-description">Venha conhecer o mundo fantástico de Etérnia! Hospede-se em Grayskull, almoce com o príncipe Adan e escute as piadas de Grogo. Passeie com veículos quadrúpedes e assista a uma batalha real de He-Man montando Gato Guerreiro. Não perca a oportunidade única de conhecer este vasto reino!</p>
+          <p class="card-price">Por apenas 3 milhões de estalecas!</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://blenderartists.org/uploads/default/optimized/4X/e/2/1/e21b00b7d425a1daf1ed2dae9d3f46e9c2302c5e_2_1035x580.jpg" alt="Nárnia">
+        <div class="card-content">
+          <h3 class="card-title">Narnina</h3>
+          <p class="card-description">Explore as maravilhas do mundo encantado de Nárnia. Conheça o Guarda-Roupa Mágico, participe de uma emocionante batalha contra a Feiticeira Branca e desfrute de um passeio encantador pela terra coberta de neve eterna.</p>
+          <p class="card-price">Por apenas 2,3 milhões de estalecas!</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://i.pinimg.com/564x/5e/d6/e1/5ed6e17823e44bdb3f5814cdeb985f0f.jpg" alt="Terra Média">
+        <div class="card-content">
+          <h3 class="card-title">Terra média</h3>
+          <p class="card-description">Embarque em uma jornada épica pela Terra Média. Caminhe pela Comarca, visite Rivendell e desafie as criaturas das sombras nas Minas de Moria. Prepare-se para enfrentar o poderoso Olho de Sauron!</p>
+          <p class="card-price">Por apenas 3,5 milhões de estalecas!</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://s2.glbimg.com/mGApSMuigSqumB69iO_sjv_3FMg=/0x0:3840x2160/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/h/V/Usue4GRQKjDESfonF0wg/img-5474.jpg" alt="Hogwarts">
+        <div class="card-content">
+          <h3 class="card-title">Hogwarts</h3>
+          <p class="card-description">Visite o mais renomado colégio de magos, Hogwarts. Faça aulas de feitiçaria, participe de emocionantes partidas de Quadribol e explore os corredores do castelo em busca de mistérios e segredos.</p>
+          <p class="card-price">Por apenas 3,5 milhões de estalecas!</p>
+        </div>
+      </div>
     </section>
   </main>
 
-<!-- Rodapé - Camila  -->
   <footer>
     <p>&copy; 2023 Agência de Viagens. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="cards.js"></script>
 </body>
 </html>
+

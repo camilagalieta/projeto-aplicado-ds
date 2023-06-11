@@ -1,0 +1,52 @@
+.card {
+    display: inline-block;
+    width: 300px;
+    height: 500px; /* Define a altura fixa do card */
+    overflow: auto; /* Adiciona uma barra de rolagem caso necessário */
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .card-content {
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    margin-top: 10px;
+    flex-grow: 1;
+    overflow: auto; /* Adiciona uma barra de rolagem caso o texto ultrapasse o espaço disponível */
+  }
+  
+  .card-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  
+  
+  
