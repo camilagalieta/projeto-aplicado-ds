@@ -122,8 +122,8 @@
 
       <section class="contact" id="contato">
         <form
-          action="https://formsubmit.co/carlos_a_amaral@estudante.sc.senai.br"
           method="POST"
+          action="https://formsubmit.co/carlos_a_amaral@estudante.sc.senai.br"
         >
           <h2>Contato</h2>
 
@@ -135,7 +135,11 @@
           />
 
           <input type="hidden" name="_captcha" value="false" />
-
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/main.html"
+          />
           <input type="text" name="_honey" style="display: none" />
 
           <input type="hidden" name="_template" value="box" />
