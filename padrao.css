@@ -4,27 +4,42 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fff;
   }
   
   header {
-    background-color: #0404B4;
-    padding: 10px;
+    background-color: #070763;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-end;
+    
+   
   }
-  
-  nav ul {
+  .logo img {
+    height: auto;
+    object-fit: cover;
+    align-items: baseline;
+    
+  }
+
+  .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
   
-  nav ul li {
+  .menu ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 100px;
   }
   
-  nav ul li a {
+  .menu ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+ 
+
+
   }
   
   main {
@@ -52,10 +67,12 @@ body {
   }
   
   footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    background-color: #FFFF;
+    color: #151515;
+    padding: 20px;
     text-align: center;
   }
+
+  
   
     

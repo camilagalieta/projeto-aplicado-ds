@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agência de Viagens</title>
   <link rel="stylesheet" href="padrao.css">
   <link rel="stylesheet" href="cards.css">
+
+
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="menu">
       <ul>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#produtos">Produtos</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
+
+    <div id="conteudo"></div>
+
   </header>
 
   <main>
@@ -69,10 +74,18 @@
   </main>
 
   <footer>
-    <p>&copy; 2023 Agência de Viagens. Todos os direitos reservados.</p>
+      
+      <p><img src="imagens/telefone.png" width="30">  Contato para Trouxas: <br>
+        (48) 5555-5555</p> 
+      <p><img src="imagens/varinha.png" width="30">  Contato para Criaturas Mágicas: <br>
+        3 batidas na madeira!</p>
+
+    <p>&copy; 2023 Agência de Viagens. Todos os direitos reservados. </p>
+
   </footer>
 
   <script src="cards.js"></script>
-</body>
+  <script src="menu.js" defer></script>
+</body> 
 </html>
 
