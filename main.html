@@ -1,75 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agência de Viagens</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agência de Viagens</title>
+    <link rel="stylesheet" href="./form.css" />
 
-  <style>
-    /* Estilos CSS podem ser adicionados aqui */
-  </style>
-</head>
+    <style>
+      /* Estilos CSS podem ser adicionados aqui */
+      * {
+        margin: 0;
+      }
+    </style>
+  </head>
 
+  <body>
+    <script src="./form.js"></script>
 
-<body>
-<!-- menu superior - Camila  -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- menu superior - Camila  -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- Objetivo da empresa - Lara -->
-  <main>
-    <section id="sobre">
-      <h2>Sobre a Empresa</h2>
-      <p>Texto sobre a empresa...</p>
-    </section>
+    <!-- Objetivo da empresa - Lara -->
+    <main>
+      <section id="sobre">
+        <h2>Sobre a Empresa</h2>
+        <p>Texto sobre a empresa...</p>
+      </section>
 
-<!-- Detalhes do produto - Antônio -->
-    <section id="produtos">
-      <h2>Produtos</h2>
-      <ul>
-        <li>
-          <h3>Passeio 1</h3>
-          <p>Descrição do passeio 1...</p>
-        </li>
-        <li>
-          <h3>Passeio 2</h3>
-          <p>Descrição do passeio 2...</p>
-        </li>
-        <li>
-          <h3>Passeio 3</h3>
-          <p>Descrição do passeio 3...</p>
-        </li>
-      </ul>
-    </section>
+      <!-- Detalhes do produto - Antônio -->
+      <section id="produtos">
+        <h2>Produtos</h2>
+        <ul>
+          <li>
+            <h3>Passeio 1</h3>
+            <p>Descrição do passeio 1...</p>
+          </li>
+          <li>
+            <h3>Passeio 2</h3>
+            <p>Descrição do passeio 2...</p>
+          </li>
+          <li>
+            <h3>Passeio 3</h3>
+            <p>Descrição do passeio 3...</p>
+          </li>
+        </ul>
+      </section>
 
-<!-- Formulário - Carlos  -->
-    <section id="contato">
-      <h2>Contato</h2>
-      <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+      <!-- Formulário - Carlos  -->
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+      <section class="contact">
+        <form
+          action="https://formsubmit.co/carlosabdoamaral@gmail.com"
+          method="POST"
+        >
+          <h2>Contato</h2>
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
+          <!-- For Form.submit -->
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nova mensagem para Agência de Viagem Mágica!"
+          />
 
-        <input type="submit" value="Enviar">
-      </form>
-    </section>
-  </main>
+          <input type="hidden" name="_captcha" value="false" />
 
-<!-- Rodapé - Camila  -->
-  <footer>
-    <p>&copy; 2023 Agência de Viagens. Todos os direitos reservados.</p>
-  </footer>
-</body>
+          <input type="text" name="_honey" style="display: none" />
+
+          <input type="hidden" name="_template" value="box" />
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Insira seu nome..."
+            required
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Insira seu email..."
+            required
+          />
+
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Insira sua mensagem..."
+            required
+          ></textarea>
+
+          <div class="form-btns">
+            <button type="button" class="clear" onclick="handleClearForm()">
+              Limpar
+            </button>
+            <button type="submit" class="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé - Camila  -->
+    <footer>
+      <p>&copy; 2023 Agência de Viagens. Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>

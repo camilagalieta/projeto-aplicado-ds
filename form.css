@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --black: #000;
+  --light: #e4e4e4;
+  --dark_blue: #120d7d;
+  --mid_blue: #2336a1;
+  --light_blue: #00f7ff;
+
+  --dark_pink: #eb1289;
+  --light_pink: #ff66c4;
+
+  --default_padding: 16px;
+}
+
+.contact {
+  background-color: var(--mid_blue);
+  padding: 5vh 25vw;
+  color: #fff;
+  font-family: "Poppins";
+}
+
+.contact > form > h2 {
+  font-weight: 300;
+  margin-bottom: 16px;
+  text-align: center;
+  color: var(--dark_blue);
+}
+
+.contact > form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: var(--light);
+  padding: 2em;
+  border-radius: 15px;
+}
+
+.contact > form > :is(input, textarea, button) {
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  font-size: 15px;
+  padding-left: var(--default_padding);
+}
+
+.contact > form > :is(textarea) {
+  resize: vertical;
+  min-height: 100px;
+  padding-top: var(--default_padding);
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+.contact > form > :is(button) {
+  background: var(--dark_blue);
+  color: var(--light);
+  transition: 0.2s;
+}
+
+.contact > form > .form-btns {
+  display: grid;
+  grid-template: "clear submit";
+  gap: 16px;
+}
+
+.form-btns > button {
+  background: var(--black);
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Poppins";
+  height: 50px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.form-btns > button:hover {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form-btns > .submit {
+  background-color: var(--dark_blue);
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .contact > form {
+    border-radius: 0;
+  }
+}
