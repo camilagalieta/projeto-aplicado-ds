@@ -5,21 +5,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
+
   }
   
   header {
-    background-color: #070763;
-    padding: 50px;
+    background-color: #1f1f46;
+    padding: 30px;
     display: flex;
     justify-content: flex-end;
     
    
-  }
-  .logo img {
-    height: auto;
-    object-fit: cover;
-    align-items: baseline;
-    
   }
 
   .menu ul {
@@ -37,18 +32,54 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
- 
-
-
+  }
+  
+  main {
+    padding: 0;
   }
   
   section {
-    padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
+  } 
+
+  #home {
+    background-color: rgb(241, 235, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
-  h2 {
-    font-size: 24px;
+  #home img {
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.5s ease;
+
+  }
+  #home img:hover {
+    transform: scale(1.1);
+  }
+
+  #sobre {
+    text-align: center;
+    background-color: rgb(241, 235, 240);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+  }
+
+  #sobre h2 {
+    font-size: 40px;
+    font-style: italic;
+  }
+
+  #produtos {
+    text-align: center;
+    background-color: rgb(241, 235, 240);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+  }
+
+  #produtos h2 {
+    font-size: 40px;
+    font-style: italic;
   }
   
   form label {
@@ -58,7 +89,7 @@ body {
   
   form input,
   form textarea {
-    width: 100%;
+    width: 120%;
     padding: 5px;
     margin-bottom: 10px;
   }
@@ -66,7 +97,7 @@ body {
   footer {
     background-color: #FFFF;
     color: #151515;
-    padding: 20px;
+    padding: auto;
     text-align: center;
   }
 
