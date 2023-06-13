@@ -1,50 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agência de Viagens</title>
-    <link rel="stylesheet" href="padrao.css" />
-    <link rel="stylesheet" href="cards.css" />
-    <link rel="stylesheet" href="./form.css" />
+<html lang="pt-br"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência de Viagens</title>
+  <link rel="stylesheet" href="padrao.css">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="./form.css" />
+
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div id="conteudo"></div>
+
+  </header>
 
     <style>
       /* Estilos CSS podem ser adicionados aqui */
       * {
-        margin: 0;
+        margin: 0;  
       }
     </style>
   </head>
-  <body>
-    <script src="./form.js"></script>
-
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-
+  
     <main>
+
+    <section id="home">
+      <img src="imagens/logo.png" width="1600">
+    </section>
       <section id="sobre">
         <h2>Sobre a Empresa</h2>
-        <p>
-          Proporcionar experiências de viagem únicas e encantadoras aos nossos
-          clientes. Especializada em viagens mágicas com destinos e atividades
-          relacionadas ao mundo da magia, como visitas a locais históricos,
-          participação em eventos mágicos, tours por escolas de magia (como
-          Hogwarts), entre outras experiências incriveis. Além disso, oferecemos
-          serviços adicionais, como a organização de festas temáticas,
-          consultoria em decoração e figurinos relacionados à magia, e até mesmo
-          aulas introdutórias de magia para os clientes interessados. O objetivo
-          principal seria encantar nossos amantes por aventuras extraordinárias,
-          proporcionando-lhes momentos mágicos e inesquecíveis durante suas
-          viagens, criando memórias e experiências especiais ligadas ao mundo da
-          fantasia e da magia.
-        </p>
+
+        <h3>Proporcionar experiências de viagem únicas e encantadoras aos nossos
+          clientes.</h3>
+
+        <p>Especializada em viagens mágicas com destinos e atividades relacionadas ao mundo da magia, como visitas a locais históricos,<br>
+          participação em eventos mágicos, tours por escolas de magia (como Hogwarts), entre outras experiências incriveis.</p> 
+
+        <p>Além disso, oferecemos serviços adicionais, como a organização de festas temáticas, consultoria em decoração e figurinos<br>
+          relacionados à magia, e até mesmo aulas introdutórias de magia para os clientes interessados.</p> 
+
+        <p>O objetivo principal seria encantar nossos amantes por aventuras extraordinárias, proporcionando-lhes momentos mágicos e inesquecíveis<br>
+           durante suas viagens, criando memórias e experiências especiais ligadas ao mundo da fantasia e da magia.</p>
       </section>
 
       <section id="produtos">
@@ -178,9 +183,16 @@
     </main>
 
     <footer>
+      <p><img src="imagens/telefone.png" width="30">  Contato para Trouxas: <br>
+        (48) 5555-5555</p> 
+      <p><img src="imagens/varinha.png" width="30">  Contato para Criaturas Mágicas: <br>
+        3 batidas na madeira!</p>
+        
       <p>&copy; 2023 Agência de Viagens. Todos os direitos reservados.</p>
     </footer>
 
     <script src="cards.js"></script>
+    <script src="menu.js" defer></script>
+    <script src="./form.js"></script>
   </body>
 </html>
