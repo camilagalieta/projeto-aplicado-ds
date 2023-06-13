@@ -98,7 +98,6 @@ body {
   
   form input,
   form textarea {
-    width: 120%;
     padding: 5px;
     margin-bottom: 10px;
   }
